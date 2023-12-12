@@ -14,8 +14,6 @@ use App\Http\Controllers\Backend\Setup\ExamTypeController;
 use App\Http\Controllers\Backend\Setup\SchoolSubjectController;
 use App\Http\Controllers\Backend\Setup\AssignSubjectController;
 use App\Http\Controllers\Backend\Setup\DesignationController;
-
-use App\Http\Controllers\Backend\Student\StudentRegController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -221,18 +219,5 @@ Route::post('designation/update/{id}', [DesignationController::class, 'Designati
 
 Route::get('designation/delete/{id}', [DesignationController::class, 'DesignationDelete'])->name('designation.delete');
 
-
-}); 
-
-
-/// Student Registration Routes  
-Route::prefix('students')->group(function(){
-
-Route::get('/reg/view', [StudentRegController::class, 'StudentRegView'])->name('student.registration.view');
-
-Route::get('/reg/Add', [StudentRegController::class, 'StudentRegAdd'])->name('student.registration.add');
-
-Route::post('/reg/store', [StudentRegController::class, 'StudentRegStore'])->name('store.student.registration');
- 
 
 }); 
