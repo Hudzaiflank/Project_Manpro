@@ -11,9 +11,7 @@ use App\Models\ExamType;
 use App\Models\StudentMarks;
 
 use PDF;
-
 use App\Models\AssignStudent;
-
 
 
 class ResultReportController extends Controller
@@ -50,13 +48,6 @@ class ResultReportController extends Controller
     	);
 
     	return redirect()->back()->with($notification);
-
-    }
-
-
-
-    } // end Method 
-
       }
     } // end Method 
 
@@ -96,7 +87,6 @@ class ResultReportController extends Controller
 
 
     }// end method 
-
 
 
 
