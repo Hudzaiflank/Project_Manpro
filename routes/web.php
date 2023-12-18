@@ -466,12 +466,10 @@ Route::get('student/result/view', [ResultReportController::class, 'ResultView'])
 
 Route::get('student/result/get', [ResultReportController::class, 'ResultGet'])->name('report.student.result.get');
 
-
 // Student ID Card Routes 
 Route::get('student/idcard/view', [ResultReportController::class, 'IdcardView'])->name('student.idcard.view');
 
 Route::get('student/idcard/get', [ResultReportController::class, 'IdcardGet'])->name('report.student.idcard.get');
-
 
 }); 
 
