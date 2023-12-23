@@ -35,7 +35,7 @@
 	 <select name="role" id="role" required="" class="form-control">
 			<option value="" selected="" disabled="">Select Role</option>
 			<option value="Admin">Admin</option>
-			<option value="Operator">Operator</option>
+			<option value="guru">Guru</option>
 			 
 		</select>
 	 </div>

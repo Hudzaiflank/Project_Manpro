@@ -1,3 +1,7 @@
+@push('styles')
+    @import url('jet-authentication-card-logo.blade.php');
+@endpush
+
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">

@@ -1,5 +1,4 @@
-
-  <header class="main-header">
+<header class="main-header">
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top pl-30">
       <!-- Sidebar toggle button-->
@@ -15,7 +14,7 @@
 					<i class="nav-link-icon mdi mdi-crop-free"></i>
 			    </a>
 			</li>			
-			<li class="btn-group nav-item d-none d-xl-inline-block">
+			{{-- <li class="btn-group nav-item d-none d-xl-inline-block">
 				<a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
 					<i class="ti-check-box"></i>
 			    </a>
@@ -24,7 +23,7 @@
 				<a href="calendar.html" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
 					<i class="ti-calendar"></i>
 			    </a>
-			</li>
+			</li> --}}
 		  </ul>
 	  </div>
 		
@@ -32,12 +31,12 @@
         <ul class="nav navbar-nav">
 		  <!-- full Screen -->
 	      <li class="search-bar">		  
-			  <div class="lookup lookup-circle lookup-right">
+			  {{-- <div class="lookup lookup-circle lookup-right">
 			     <input type="text" name="s">
-			  </div>
+			  </div> --}}
 		  </li>			
 		  <!-- Notifications -->
-		  <li class="dropdown notifications-menu">
+		  {{-- <li class="dropdown notifications-menu">
 			<a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown" title="Notifications">
 			  <i class="ti-bell"></i>
 			</a>
@@ -100,31 +99,29 @@
 				  <a href="#">View all</a>
 			  </li>
 			</ul>
-		  </li>	
+		  </li>	 --}}
 		  
-@php
- $user = DB::table('users')->where('id',Auth::user()->id)->first();
-@endphp		  
 	      <!-- User Account-->
           <li class="dropdown user user-menu">	
-			<a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
-				<img src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }}" alt="">
+			<a href="{{ route('profile.view') }}" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
+				<img src="{{asset('backend/images/avatar/1.jpg')}}" alt="">
 			</a>
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">
-	 <a class="dropdown-item" href="{{ route('profile.view') }}"><i class="ti-user text-muted mr-2"></i> Profile</a>
-				 <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> My Wallet</a>
-				 <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a>
+				 <a class="dropdown-item" href="{{ route('profile.view') }}"><i class="ti-user text-muted mr-2"></i> Profile</a>
+				 {{-- <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> My Wallet</a>
+				 <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a> --}}
 				 <div class="dropdown-divider"></div>
-				 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+				 <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+                 {{-- href yg logout itu di kasih link route ke file web.php tapi buat dulu controller nya di cli}}
 			  </li>
 			</ul>
           </li>	
-		  <li>
+		  {{-- <li>
               <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
 			  	<i class="ti-settings"></i>
 			  </a>
-          </li>
+          </li> --}}
 			
         </ul>
       </div>

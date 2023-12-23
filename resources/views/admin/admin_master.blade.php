@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{asset('backend/images/favicon.ico')}}">
 
-    <title>Easy School Management System - Dashboard</title>
+    <title>Sistem Akademik Wisata Hasanah - Dashboard</title>
     
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="{{ asset('backend/css/vendors_css.css') }}">
@@ -23,27 +23,28 @@
 
 <body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
 	
-<div class="wrapper">
-
-  @include('admin.body.header')
-  <!-- Left side column. contains the logo and sidebar -->
-  @include('admin.body.sidebar')
-
-  <!-- Content Wrapper. Contains page content -->
-  @yield('admin')
-  <!-- /.content-wrapper -->
-
- @include('admin.body.footer')
-
-  <div class="control-sidebar-bg"></div>
+  <div class="wrapper">
+    
+    @include('admin.body.header')
+    <!-- Left side column. contains the logo and sidebar -->
+    @include('admin.body.sidebar')
+    
+    <!-- Content Wrapper. Contains page content -->
+    @yield('admin')
+    <!-- /.content-wrapper -->
+    
+    @include('admin.body.footer')
+    
+    
+    <div class="control-sidebar-bg"></div>
+    
+  </div>
+  <!-- ./wrapper -->
   
-</div>
-<!-- ./wrapper -->
-  	
-	  
+  
 	<!-- Vendor JS -->
 	<script src="{{ asset('backend/js/vendors.min.js') }}"></script>
-    <script src="{{ asset('../assets/icons/feather-icons/feather.min.js') }}"></script>	
+  <script src="{{ asset('../assets/icons/feather-icons/feather.min.js') }}"></script>	
 	<script src="{{ asset('../assets/vendor_components/easypiechart/dist/jquery.easypiechart.js') }}"></script>
 	<script src="{{ asset('../assets/vendor_components/apexcharts-bundle/irregular-data-series.js') }}"></script>
 	<script src="{{ asset('../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js') }}"></script>
