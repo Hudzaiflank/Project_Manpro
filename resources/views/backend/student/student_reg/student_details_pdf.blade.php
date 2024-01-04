@@ -127,13 +127,13 @@
   </tr>
     <tr>
     <td>14</td>
-    <td><b>Group </b></td>
-    <td>{{ $details['group']['name'] }}</td>
+    {{-- <td><b>Group </b></td> --}}
+    {{-- <td>{{ $details['group']['name'] }}</td> --}}
   </tr>
     <tr>
     <td>15</td>
-    <td><b>Shift </b></td>
-    <td>{{ $details['shift']['name'] }}</td>
+    {{-- <td><b>Shift </b></td> --}}
+    {{-- <td>{{ $details['shift']['name'] }}</td> --}}
   </tr>
    
 </table>

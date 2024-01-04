@@ -219,18 +219,7 @@
 
 <div class="col-md-4">
 
- 		 <div class="form-group">
-		<h5>Group <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <select name="group_id"   required="" class="form-control">
-			<option value="" selected="" disabled="">Select Group</option>
-			 @foreach($groups as $group)
-			<option value="{{ $group->id }}" {{ ($editData->group_id == $group->id)? "selected":"" }} >{{ $group->name }}</option>
-		 	@endforeach
-			 
-		</select>
-	  </div>		 
-	  </div>
+
 	  
  			</div> <!-- End Col md 4 --> 
  
@@ -243,35 +232,20 @@
 <div class="row"> <!-- 5TH Row -->
 
 
-<div class="col-md-4">
+	<div class="col-md-4">
 
- 		 <div class="form-group">
-		<h5>Shift <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <select name="shift_id"  required="" class="form-control">
-			<option value="" selected="" disabled="">Select Shift</option>
-			 @foreach($shifts as $shift)
-			<option value="{{ $shift->id }}" {{ ($editData->shift_id == $shift->id)? "selected":"" }} >{{ $shift->name }}</option>
-		 	@endforeach
-			 
-		</select>
-	  </div>		 
-	  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
+		<div class="form-group">
+	   <h5>Profile Image <span class="text-danger">*</span></h5>
+	   <div class="controls">
+	<input type="file" name="image" class="form-control" id="image" >  </div>
+	</div>
+	 
+			</div> <!-- End Col md 4 --> 
 
 
 
  			
- 		<div class="col-md-4">
 
- 		<div class="form-group">
-		<h5>Profile Image <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <input type="file" name="image" class="form-control" id="image" >  </div>
-	 </div>
-	  
- 			</div> <!-- End Col md 4 --> 
 
 
 <div class="col-md-4">
